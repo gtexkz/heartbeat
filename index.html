@@ -30,28 +30,30 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+            background-color: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
 
         .container {
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.8); /* Более тёмный контейнер */
-            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 30px;
             border-radius: 15px;
             animation: fadeIn 3s ease-in-out;
             position: relative;
             z-index: 2;
+            max-width: 90%;
+            box-sizing: border-box;
         }
 
         h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             margin-bottom: 20px;
             animation: glow 2s infinite alternate;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 30px;
         }
 
@@ -59,12 +61,13 @@
             background-color: #00ff00;
             color: #000000;
             text-decoration: none;
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            padding: 12px 25px;
+            font-size: 1.1rem;
             border-radius: 50px;
             box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            margin: 5px;
+            margin: 8px 4px;
+            display: inline-block;
         }
 
         .btn:hover {
@@ -89,6 +92,37 @@
             }
             100% {
                 text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+                margin: 6px 2px;
+            }
+
+            .container {
+                padding: 15px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                width: 100%;
+                font-size: 1rem;
             }
         }
     </style>
