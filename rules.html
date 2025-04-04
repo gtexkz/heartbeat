@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Правила</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .background {
+      background: url('https://gtexkz.github.io/heartbeat/background.png') no-repeat fixed;
+      background-size: cover;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 30px;
+      margin: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      width: calc(100% - 60px);
+      height: calc(100% - 40px);
+      overflow-y: auto;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1.1em;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    h1, h2 {
+      margin-top: 20px;
+      font-size: 1.8em;
+    }
+
+    .back-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      color: black;
+      background-color: #00ff00;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #00cc00;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Правила сообщества</h1>
+
+    <h2>1 уровень</h2>
+    <ul>
+      <li>Не орать в войсе</li>
+      <li>0. Капс (Сообщение в большом количестве)</li>
+      <li>1. Флуд (В большом количестве)</li>
+      <li>2. Рандом пинг (В большом количестве)</li>
+    </ul>
+
+    <h2>2 уровень</h2>
+    <ul>
+      <li>3. Буллинг</li>
+      <li>4. Спам пинга</li>
+      <li>5. Оскорбление родителей, родственников или шутки в их сторону</li>
+    </ul>
+
+    <h2>3 уровень</h2>
+    <ul>
+      <li>6. Постинг NSFW</li>
+      <li>7. Докс, Сват и всё с этим связанное</li>
+      <li>8. Реклама или сторонние ссылки</li>
+      <li>9. Постинг крови или расчленёнки (из игр можно)</li>
+      <li>10. Оскорбление наций или стран</li>
+      <li>11. Темы про наркотики</li>
+      <li>12. Оскорбление участников сервера</li>
+      <li>15. Игра с читами</li>
+      <li>16. Шутки про нацизм или его распространение</li>
+      <li>17. Soundpad — Саундпад</li>
+      <li>18. Продажа чего-либо — аккаунтов, вещей и т.д.</li>
+      <li>19. Подстрекательство</li>
+      <li>20. Тимкилл (TeamKill)</li>
+      <li>21. Любая пропаганда или упоминание террористических актов</li>
+    </ul>
+
+    <h2>Наказания</h2>
+    <ul>
+      <li>1. Первый уровень наказания — варн, мут</li>
+      <li>2. Второй уровень наказания — кик, мут</li>
+      <li>3. Третий уровень наказания — мут, кик, бан</li>
+    </ul>
+    <p>После 3 предупреждений вы получите наказание, пример: Alguar28 (3/3)</p>
+    <button class="back-button" onclick="window.location.href='index.html'">Вернуться на главную</button>
+  </div>
+</body>
+</html>
